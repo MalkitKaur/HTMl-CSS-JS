@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Type Writer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Malkit's Typewriter Website">
+    <meta name="robots" content="nofollow , noindex">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Noto+Serif+JP:wght@600&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+   <script>
+    function showDiv() {
+        document.getElementById('thank-msg').style.display = "block";
+    }
+
+    function closeDiv() {
+        document.getElementById('thank-msg').style.display = "none";
+    }
+
+   </script>
+   
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <header-panel></header-panel>
+    <!-- Header -->
+
+    <!-- Contact-banner-->
+    <section class="banner">
+        <img src="images/contact-banner.jpg" alt="banner">
+    </section>
+    <!-- Contact-banner-end-->
+
+    <!-- Contact form-->
+    <section class="contact-panel">
+        <div class="container">
+            <div class="information">
+                <div class="info-items">
+                    <div class="box">
+                        <span class="icon"><img src="images/email.png" alt="icn"></span>
+                        <h4>Email</h4>
+                        <p>demo@bookslibrary.com</p>
+                    </div>
+                </div>
+                <div class="info-items">
+                    <div class="box">
+                        <span class="icon"><img src="images/phone-call.png" alt="icn"></span>
+                        <h4>Phone</h4>
+                        <p>+1 202-918-2132</p>
+                    </div>
+                </div>
+                <div class="info-items">
+                    <div class="box">
+                        <span class="icon"><img src="images/gps.png" alt="icn"></span>
+                        <h4>Address</h4>
+                        <p>5 Aberdeen Court, Florence,sc, 29501  United States</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-row contact-row">
+                <div class="left-panel">
+
+                </div>
+                <div class="right-panel">
+                    <form>
+                        <h2>Contact Us</h2>
+                        <h4>How can we help you!</h4>
+                        <ul class="contact-list">
+                            <li><label for="fname">First name:</label>
+                                <input class="form-control" type="text" id="fname" name="fname" >
+                            </li>
+                            <li>
+                                <label for="lname">Last name:</label>
+                                <input class="form-control" type="text" id="lname" name="lname" >
+                            </li>
+                       
+                            <li>
+                                <label for="email">Email:</label>
+                                <input class="form-control" type="email" id="email" name="Email" >
+                            </li>
+                       
+                            <li>
+                                <label>Comments:</label>
+                                <textarea ></textarea>
+                            </li>
+                            <li>
+                                <input type="button" name="answer" value="Submit" onclick="showDiv()" />
+                            </li>
+                        
+                        </ul>
+                    </form> 
+                      
+                </div>
+            </div> 
+        </div>    
+    </section>
+    <!-- Contact-form-end-->
+
+    <!-- Footer-->
+    <footer-panel></footer-panel>  
+    <!-- Footer end-->
+
+    <div id="thank-msg"  style="display:none;" class="answer_list" >
+        <div class="modal">
+            <div class="popup-modal">
+                <h2>Thank you!</h2>
+                <h3>Your Response is Submitted Successfully.</h3>
+                <a class="close" onclick="closeDiv()">X</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // using classList.toggle() method
+        //const para = document.querySelector('.box');
+        const para = document.getElementById('navi');
+      
+        function toggleClass() {
+          // toggle class
+          para.classList.toggle('box');
+        }
+    </script>
+      <script>
+let elements = ['.image'];
+
+// Add class on mouseover
+document.querySelectorAll(elements).forEach(element => {
+element.addEventListener('mouseover', () => {
+element.classList.add('active');
+});
+});
+
+// Remove class on mouseout
+document.querySelectorAll(elements).forEach(element => {
+element.addEventListener('mouseout', () => {
+element.classList.remove('active');
+});
+});
+</script>
+
+
+  </body>
+</html>

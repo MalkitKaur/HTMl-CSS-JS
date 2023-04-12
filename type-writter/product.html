@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Type Writer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Malkit's Typewriter Website">
+    <meta name="robots" content="nofollow , noindex">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Noto+Serif+JP:wght@600&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="js/main.js">
+    </script>
+
+    <script>
+        function showDiv() {
+            document.getElementById('cart').style.display = "block";
+        }
+    
+        function closeDiv() {
+            document.getElementById('cart').style.display = "none";
+        }
+    
+    </script>
+   
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <header-panel></header-panel>
+    <!-- Header -->
+
+    <!-- Product-Banner -->
+    <section class="banner">
+        <img src="images/product-banner.jpg" alt="banner">
+    </section>
+    <!-- Product-Banner-end -->
+
+    <!-- Products-->
+    <section class="product-panel product-page">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="container-row product-row">
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-image image">
+                            <img src="images/pro01.jpg" alt="product">
+                        </div>
+                        <a href="#" class="btn" onclick="showDiv()">Add to Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-image image">
+                            <img src="images/pro02.jpg" alt="product">
+                        </div>
+                        <a href="#" class="btn" onclick="showDiv()">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-image image">
+                            <img src="images/pro03.jpg" alt="product">
+                        </div>
+                        <a href="#" class="btn" onclick="showDiv()">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-image image">
+                            <img src="images/pro04.jpg" alt="product">
+                        </div>
+                        <a href="#" class="btn" onclick="showDiv()">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-image image">
+                            <img src="images/pro03.jpg" alt="product">
+                        </div>
+                        <a href="#" class="btn" onclick="showDiv()">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-image image">
+                            <img src="images/pro01.jpg" alt="product">
+                        </div>
+                        <a href="#" class="btn" onclick="showDiv()">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-image image">
+                            <img src="images/pro04.jpg" alt="product">
+                        </div>
+                        <a href="#" class="btn" onclick="showDiv()">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-image image">
+                            <img src="images/pro02.jpg" alt="product">
+                        </div>
+                        <a href="#" class="btn"  onclick="showDiv()">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products-end-->
+
+     <!-- Footer-->
+     <footer-panel></footer-panel>  
+     <!-- Footer end-->
+
+    <div id="cart"  style="display:none;" class="answer_list" >
+        <div class="modal">
+            <div class="popup-modal">
+                <h2>Thank you!</h2>
+                <h3>This Product is successfully added to your cart</h3>
+                <a class="close" onclick="closeDiv()">X</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // using classList.toggle() method
+        //const para = document.querySelector('.box');
+        const para = document.getElementById('navi');
+      
+        function toggleClass() {
+          // toggle class
+          para.classList.toggle('box');
+        }
+    </script>
+
+
+<script>
+let elements = ['.image'];
+
+// Add class on mouseover
+document.querySelectorAll(elements).forEach(element => {
+element.addEventListener('mouseover', () => {
+element.classList.add('active');
+});
+});
+
+// Remove class on mouseout
+document.querySelectorAll(elements).forEach(element => {
+element.addEventListener('mouseout', () => {
+element.classList.remove('active');
+});
+});
+</script>
+
+
+    </body>
+    </html>

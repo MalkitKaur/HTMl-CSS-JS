@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Type Writer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Malkit's Typewriter Website">
+    <meta name="robots" content="nofollow , noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Noto+Serif+JP:wght@600&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <script src="js/main.js"></script>
+
+   
+   
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <header-panel></header-panel>
+    <!-- Header -->
+
+    <!-- About-Banner-->
+    <section class="banner">
+        <img src="images/about-banner.jpg" alt="banner">
+    </section>
+    <!-- About-Banner-end-->
+
+    <!-- About-panel-->
+    <section class="about-panel">
+        <div class="container">
+            <div class="container-row about-row">
+                <div class="left-panel">
+                    <h2>About Us</h2>
+                    <h4>WHERE TECHNOLOGY MEETS NOSTALGIA</h4>
+                    <p>In the early 1900s, a visionary young woman named Malkit Kaur saw the potential of the rapidly growing typewriter industry and decided to start her 
+                        own typewriter manufacturing company. With her keen eye for design and passion for innovation, Malkit set out to create a company that would produce the most 
+                        advanced and high-quality typewriters on the market.</P>
+                        
+                        <P>Malkit Imperials, as the company came to be known, quickly gained a reputation for excellence. Each of its typewriters was crafted with precision and care, 
+                        with a focus on durability and reliability. Malkit herself was a tireless inventor, constantly experimenting with new mechanisms and features to make her machines 
+                        faster, more efficient, and more user-friendly.</P>
+                        <P>As the company grew, Malkit Imperials expanded its operations to other parts of the world, opening factories and offices in major cities across the globe. Its 
+                        machines became popular with writers, journalists, and business people alike, and the company's name became synonymous with quality and innovation.
+                        In the 1960s, Malkit Imperials was at the forefront of the computer revolution, developing some of the earliest electronic typewriters and other computer-related 
+                        technologies. Malkit herself remained involved in the company's operations well into her later years, always striving to stay ahead of the curve in terms of technology 
+                        and design.</P>
+                        <P>Today, Malkit Imperials is a beloved icon of the typewriter industry, with collectors and enthusiasts around the world cherishing its vintage machines for their beauty, 
+                        craftsmanship, and historical significance. While the company no longer produces typewriters, its legacy lives on, inspiring generations of inventors and entrepreneurs to 
+                        pursue excellence and innovation in everything they do.</p>
+                </div>
+                <div class="right-panel image">
+                    <img src="images/about-img.jpg" alt="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-panel-end-->
+
+     <!-- Footer-->
+     <footer-panel></footer-panel>  
+     <!-- Footer end--> 
+    
+    <script>
+        // using classList.toggle() method
+        //const para = document.querySelector('.box');
+        const para = document.getElementById('navi');
+      
+        function toggleClass() {
+          // toggle class
+          para.classList.toggle('box');
+        }
+    </script>
+
+    <script>
+let elements = ['.image'];
+
+// Add class on mouseover
+document.querySelectorAll(elements).forEach(element => {
+element.addEventListener('mouseover', () => {
+element.classList.add('active');
+});
+});
+
+// Remove class on mouseout
+document.querySelectorAll(elements).forEach(element => {
+element.addEventListener('mouseout', () => {
+element.classList.remove('active');
+});
+});
+</script>
+
+  </body>
+  </html>
